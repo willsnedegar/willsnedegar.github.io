@@ -1,0 +1,72 @@
+@media (min-width: 576px) {
+    #sm-right-align{
+        text-align:right;
+        margin-right:10px;
+    }
+}
+.skills-card-body{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.section-header{
+    padding-bottom: 5px;
+    padding-top:65px;
+    margin-top: -30px;
+    margin-bottom:30px;
+    border-bottom: 1px solid #eee;
+}
+.section-text{
+    font-size:20px;
+}
+.card-text{
+    font-size:18px;
+}
+.card-header{
+    font-size:22px;
+    padding-bottom:0px;
+}
+.icon{
+    width: 55px;
+}
+.logo{
+    width:120px;
+    height:120px;
+    display: block;
+    margin: 0 auto;
+}
+.skill{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.contact-link{
+    margin:10px;
+}
+.card + .card{
+    margin-top:40px;
+}
+#profile{
+    border-radius:16%;
+    margin:30px;
+    width:160px;
+}
+#intro_jumbo{
+    padding-top:90px;
+    padding-bottom:20px;
+    height: 95vh;
+    text-align:center;
+}
+#motif{
+    margin-top:20px;
+}
+#endcard{
+    background-color:#428bca;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;
+}
+#page-up{
+    width:35px;
+    margin-right:8px;
+}

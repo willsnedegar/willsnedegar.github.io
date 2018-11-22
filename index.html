@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--CDN link for Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Will Snedegar</title>
+
+    </head>
+    <body>
+        <!-- Navbar fixed to the top of the window with section links collapsable for smaller screens. This is a bootstrap component -->
+        <nav class="navbar border-bottom fixed-top navbar-expand-lg navbar-light bg-light">
+            <!-- My name acts as link to top of page -->
+            <a class="navbar-brand" href="#intro_jumbo">Will Snedegar</a>
+            <!-- Button appears when screen is smaller than bootstrap large breakpoint(992px); it toggles dropdown of section links-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- List of nav Section links, aligned right-->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <!-- All links reference the id's of the section headers-->
+                        <a class="nav-link" href="#About">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Shaded area taking up full width of screen and 95% of height, acting as welcome banner. This uses the bootsrap component "jumbotron"-->
+        <div class="jumbotron border-bottom" id="intro_jumbo">
+            <!-- Rounded profile picture of fixed dimensions -->
+            <img src="images/profile-pic.jpg" alt="Profile Picture" id="profile">
+            <h1 class="display-4">Will Snedegar</h1>
+                <!-- Personalized statement, uses lead, a bootstrap class that makes text a different font/size-->
+            <p class="lead" id="motif">
+                Coding a smarter world
+                <br>
+                One line at a time
+            </p>
+        </div>
+
+        <div class="container">
+            <!-- First section header, combines header <h*>class with bottom border, padding and margin-->
+            <div class="section-header" id="About">
+                <h3>About Me</h3>
+            </div>
+            <!-- The section-text class is just a standard font and font size for the sections-->
+            <div class="section-text">
+                    Hi, I'm Will Snedegar, a computer science major at the Unviersity of Michigan, Ann Arbor who loves playing fingerstyle guitar, dogs,
+                    lifting heavy things, and the movie <i>Spy Kids 3: Game Over</i>. As a programmer, I enjoy
+                    applying my passion for building things, goal-fueled work ethic, meticulus attention to detail, and continuing desire
+                    to learn to make the world a more interesting place to live. I'm looking forward for the opportunity to translate this passion for
+                    programming into a passion for your business.
+            </div>
+            <!-- Second section, Experience-->
+            <div class="section-header" id="Experience">
+                <h3>Experience</h3>
+            </div>
+            <!-- Section uses card class, a bootstrap class that consolidates a header, body and footer section.-->
+            <div class="card">
+                <div class="card-header">
+                    <!-- Bootstrap grid is used to right and left align two parts and the header, unless the screen size is -->
+                    <div class="row">
+                        <!-- Two columns are used to separate the company name and job title when screen size is small or greater
+                        (text of second column is aligned right), or to stack them on top of each other when smaller -->
+                        <div class="col-sm-6">
+                            <h4>The Helm Group</h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- Right align and style with bootstrap lead class text of the third, rightmost column in the row-->
+                            <p class="lead" id="sm-right-align">Summer Intern</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <!-- The column for the text takes up 8/12 (or 2/3) of the container space in medium or larger screens-->
+                        <div class="col-md-8 card-text">
+                            <p>
+                                I assisted mechanical and HVAC engineers in the completion of the Mercy Health: Riverside Campus
+                                hospital in Rockford, Illinois. Though this was not a tech internship, it was valuable for its exposure
+                                to the expecations and dynamics of a full time job at a large engineering firm as well as practice with the
+                                soft skills integral to efficient work in an office environment.<br> Some of my responsibilities:<br>
+                                <!-- Unordered list of responsibilities-->
+                                <ul>
+                                    <li>
+                                        Manage Excel spreadsheets to facilitate the HVAC equipment budgeting, bid, and submittal phases.
+                                    </li>
+                                    <li>
+                                        Regulate the site punch list
+                                    </li>
+                                    <li>
+                                        Markup architectural and plumbing blueprints in Bluebeam Revu
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <!-- This image takes up the remaining 4 of 12 grid spaces in the container, if the screen is medium size or larger-->
+                        <div class="col-md-4">
+                            <!-- The img-fluid class causes the image to take the size of its parent element, the column-->
+                            <img src="images/Mercyhealth1.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer section of the bootstrap card component, with the text having muted styling -->
+                <div class="card-footer text-muted">
+                    Summer 2018
+                </div>
+            </div>
+
+            <!-- Third section header, Projects-->
+            <div class="section-header" id="Projects">
+                <h3>Projects</h3>
+            </div>
+            <div class="section-text">
+                <!-- Unordered list of my projects-->
+                <ul>
+                    <li>
+                        This website,<a href="https://github.com/willsnedegar/willsnedegar.github.io/blob/master/index.html">code</a>d from scratch
+                    </li>
+                    <li>
+                        A book review web app that allows a user to create an account, search books, leave book reviews, and see the reviews of others.
+                        Utilizing the Goodreads API/data. Based in Python, Flask, and SQL. 
+                </ul>
+            </div>
+
+            <!--Fourth section header, Skills-->
+            <div class="section-header" id="Skills">
+                <h3>Skills</h3>
+            </div>
+            <!-- Using bootstrap card component to list languages-->
+            <div class="card">
+                <div class="card-header">
+                    <h4>Languages</h4>
+                </div>
+                <!-- The card body (the skills-card-body class just changes the padding)-->
+                <div class="card-body skills-card-body">
+                    <div class="row">
+                        <!-- The card body is filled with language logos and captions of thier names.
+                        They are equally spaced across the row if the screen is small or larger-->
+                        <div class="col-sm skill">
+                            <img src="images/c-logo.png" alt="C logo" class="logo">
+                            <!-- Line break to add space between logo and caption-->
+                            <br>
+                            C
+                        </div>
+                        <div class="col-sm skill">
+                            <img src="images/python.png" alt="Python logo" class="logo">
+                            <br>
+                            Python
+                        </div>
+                        <div class="col-sm skill">
+                            <img src="images/html5.png" alt="HTML5 logo" class="logo">
+                            <br>
+                            HTML5
+                        </div>
+                        <div class="col-sm skill">
+                            <img src="images/css3.png" alt="CSS logo" class="logo">
+                            <br>
+                            CSS
+                        </div>
+                        <div class="col-sm skill">
+                            <img src="images/postgreSQL.png" alt="SQL logo" class="logo">
+                            <br>
+                            PostgreSQL
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Again using card class inside of skills section, this time for utilities-->
+            <div class="card">
+                <div class="card-header">
+                    <h4>Utilities</h4>
+                </div>
+                <!-- Same exact set up used above for "languages" section of "skils"-->
+                <div class="card-body skills-card-body">
+                    <div class="row">
+                        <div class="col-sm skill">
+                            <img src="images/bootstrap-stack.png" alt="boostrap logo" class="logo">
+                            <br>
+                            Bootstrap
+                        </div>
+                        <div class="col-sm skill">
+                            <img src="images/sass.png" alt="SASS logo" class="logo">
+                            <br>
+                            SASS
+                        </div>
+
+                        <div class="col-sm skill">
+                            <img src="images/flask.png" alt="Flask logo" class="logo">
+                            <br>
+                            Flask
+                        </div>
+
+                        <div class="col-sm skill">
+                            <img src="images/jinja2.png" alt="Jinja2 logo" class="logo">
+                            <br>
+                            Jinja
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fifth section header, Education-->
+            <div class="section-header" id="Education">
+                <h3>Education</h3>
+            </div>
+            <div class="row">
+                <!-- Row split between three columns when size medium or larger, two of which are equal size (5/12 of screen),
+                with the last section separating the two with 1/6 of the screen width.-->
+                <div class="col-md-5 section-text">
+                     I'm currently a freshman in Computer Science (College of Engineering)
+                     at the University of Michigan Ann, Arbor.
+                     <br>
+                     I dont have a college GPA yet, but my highschool stats were 3.96 unweighted GPA (third in class) and a 36 ACT.
+                </div>
+                <!-- This sepator column has a line break to vertically seperate when the screen is smaller than medium size-->
+                <div class="col-md-2">
+                    <br>
+                </div>
+                <div class="col-md-5">
+                    <img src="images/michigan.jpg" alt="Michigan Logo" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Sixth section, Contact -->
+            <div class="section-header" id="Contact">
+                <h3>Contact</h3>
+            </div>
+            <!-- Links containing an icon and hyperlinked text -->
+            <div class="contact-link">
+                <!-- Email link -->
+                <a href="mailto:someone@yoursite.com"><img src="images/email.png" alt="Email Icon" class="icon">&emsp;williamsnedegar@gmail.com</a>
+            </div>
+            <div class="contact-link">
+                <!-- Github Link -->
+                <a href="https://github.com/willsnedegar"><img src="images/github-icon.png" alt="Github Logo" class="icon">&emsp;https://github.com/willsnedegar</a>
+            </div>
+            <div class="contact-link">
+                <!--Phone Link -->
+                <a href="tel:+1-779-771-3299"><img src="images/phone.png" alt="Phone Icon" class="icon">&emsp;(779) 771-3299</a>
+            </div>
+        </div>
+
+        <!--Blue colored footer of the page, includes page up arrow link-->
+        <div id="endcard">
+            <a href="#intro_jumbo">
+                <img src="images/arrow.png" alt="Arrow page-up" id="page-up">
+            </a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
