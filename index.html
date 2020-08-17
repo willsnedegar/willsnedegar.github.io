@@ -31,6 +31,9 @@
                         <a class="nav-link" href="#Projects">Projects</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#Activities">Activities</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#Skills">Skills</a>
                     </li>
                     <li class="nav-item">
@@ -49,11 +52,11 @@
             <img src="images/profile-pic.jpg" alt="Profile Picture" id="profile">
             <h1 class="display-4">Will Snedegar</h1>
                 <!-- Personalized statement, uses lead, a bootstrap class that makes text a different font/size-->
-            <p class="lead" id="motif">
+            <!-- <p class="lead" id="motif">
                 Coding a smarter world
                 <br>
                 One line at a time
-            </p>
+            </p> -->
         </div>
 
         <div class="container">
@@ -63,9 +66,9 @@
             </div>
             <!-- The section-text class is just a standard font and font size for the sections-->
             <div class="section-text">
-                    Hi, I'm Will Snedegar, a computer science major at the Unviersity of Michigan, Ann Arbor who loves playing fingerstyle guitar,
-                    lifting heavy things, dogs, and the movie <i>Spy Kids 3: Game Over</i>. As a programmer, I enjoy
-                    applying my passion for building things, goal-fueled work ethic, meticulous attention to detail, and continuing desire
+                    Hi, I'm Will, a computer science major at the Unviersity of Michigan, Ann Arbor (3.84 GPA) with experience in full-stack web development and autonomous robotics.
+                    I love playing fingerstyle guitar and banjo, listening to drone music, and the movie <i>Spy Kids 3: Game Over</i>.<br>
+                    As a programmer, I enjoy applying my passion for building interactive products, goal-fueled work ethic, meticulous attention to detail, and continuing desire
                     to learn to make the world a more interesting place to live. I'm looking forward for the opportunity to translate this passion for
                     programming into a passion for your business.
             </div>
@@ -74,6 +77,106 @@
                 <h3>Experience</h3>
             </div>
             <!-- Section uses card class, a bootstrap class that consolidates a header, body and footer section.-->
+            <div class="card" id="Buymyspot">
+                <div class="card-header">
+                    <!-- Bootstrap grid is used to right and left align two parts and the header, unless the screen size is -->
+                    <div class="row">
+                        <!-- Two columns are used to separate the company name and job title when screen size is small or greater
+                        (text of second column is aligned right), or to stack them on top of each other when smaller -->
+                        <div class="col-sm-6">
+                            <h4>BUYMYSPOT</h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- Right align and style with bootstrap lead class text of the third, rightmost column in the row-->
+                            <p class="lead" id="sm-right-align">Head of Software Developement</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <!-- The column for the text takes up 8/12 (or 2/3) of the container space in medium or larger screens-->
+                        <div class="col-md-8 card-text">
+                            <p>
+                                BUYMYSPOT is an entirely cloud-based peer-to-peer marketplace for parking spots, which has handled over $3,000 in its first month live.<br>
+                                As the sole developer for this project, I got to experience the full breadth of full-stack development. From architcture decisions to
+                                the front-end design, BUYMYSPOT was built from the ground up to be extensible while minimizing cost and production time.
+                                <!-- Unordered list of responsibilities-->
+                                <ul>
+                                    <li>
+                                        Constructed a component-based front-end interface in Vue.js, with emphasis on modularity and readability. Hosted on AWS S3.
+                                    </li>
+                                    <li>
+                                        Designed back-end system in Node.js and Express to interface with MongoDB database. Deployed serverless with AWS Lambda, EventBridge, and API Gateway.
+                                    </li>
+                                    <li>
+                                        Advise the development of the mobile app and its integration with the existing backend infrastructure.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <!-- This image takes up the remaining 4 of 12 grid spaces in the container, if the screen is medium size or larger-->
+                        <div class="col-md-4">
+                            <!-- The img-fluid class causes the image to take the size of its parent element, the column-->
+                            <img src="images/BUYMYSPOTAPPICON-2.png" class="img-fluid vertical-center">
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer section of the bootstrap card component, with the text having muted styling -->
+                <div class="card-footer text-muted">
+                    September 2019 - August 2020
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <!-- Bootstrap grid is used to right and left align two parts and the header, unless the screen size is -->
+                    <div class="row">
+                        <!-- Two columns are used to separate the company name and job title when screen size is small or greater
+                        (text of second column is aligned right), or to stack them on top of each other when smaller -->
+                        <div class="col-sm-6">
+                            <h4>Maxar Technologies</h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- Right align and style with bootstrap lead class text of the third, rightmost column in the row-->
+                            <p class="lead" id="sm-right-align">Software Development Intern</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <!-- The column for the text takes up 8/12 (or 2/3) of the container space in medium or larger screens-->
+                        <div class="col-md-8 card-text">
+                            <p>
+                                At Maxar I got the opportunity to do full-stack development on the Redwing team, a fully cloud-based web-app for 
+                                processing satellite imagery.
+                                <!-- Unordered list of responsibilities-->
+                                <ul>
+                                    <li>
+                                      Developed back-end code in Java for processing satellite imagery using the Spring and JUnit frameworks
+                                    </li>
+                                    <li>
+                                      Streamlined React/Redux front-end interface to simplify user experience
+                                    </li>
+                                    <li>
+                                      Compiled and analyzed database metrics using PostgreSQL.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <!-- This image takes up the remaining 4 of 12 grid spaces in the container, if the screen is medium size or larger-->
+                        <div class="col-md-4">
+                            <!-- The img-fluid class causes the image to take the size of its parent element, the column-->
+                            <img src="images/MAXAR_Logo_Yellow_CMYK-01.png" class="img-fluid vertical-center">
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer section of the bootstrap card component, with the text having muted styling -->
+                <div class="card-footer text-muted">
+                    Summer 2020, part-time after August 2020
+                </div>
+            </div>
+
+
             <div class="card">
                 <div class="card-header">
                     <!-- Bootstrap grid is used to right and left align two parts and the header, unless the screen size is -->
@@ -116,7 +219,7 @@
                         <!-- This image takes up the remaining 4 of 12 grid spaces in the container, if the screen is medium size or larger-->
                         <div class="col-md-4">
                             <!-- The img-fluid class causes the image to take the size of its parent element, the column-->
-                            <img src="images/mtop_enterprises.png" class="img-fluid pt-5">
+                            <img src="images/mtop_enterprises.png" class="img-fluid vertical-center p-3">
                         </div>
                     </div>
                 </div>
@@ -167,7 +270,7 @@
                         <!-- This image takes up the remaining 4 of 12 grid spaces in the container, if the screen is medium size or larger-->
                         <div class="col-md-4">
                             <!-- The img-fluid class causes the image to take the size of its parent element, the column-->
-                            <img src="images/Mercyhealth1.jpg" class="img-fluid pt-2">
+                            <img src="images/Mercyhealth1.jpg" class="img-fluid vertical-center">
                         </div>
                     </div>
                 </div>
@@ -177,12 +280,68 @@
                 </div>
             </div>
 
-            <!-- Third section header, Projects-->
+            <!--Third section header, Activities-->
+            <div class="section-header" id="Activities">
+                <h3>Activities</h3>
+            </div>
+            <!-- Using bootstrap card component to list languages-->
+            <div class="card" id="UMA">
+                <div class="card-header">
+                    <div class="row">
+                        <!-- Two columns are used to separate the company name and job title when screen size is small or greater
+                        (text of second column is aligned right), or to stack them on top of each other when smaller -->
+                        <div class="col-sm-4">
+                            <h4>UM::Autonomy</h4>
+                        </div>
+                        <div class="col-sm-8">
+                            <!-- Right align and style with bootstrap lead class text of the third, rightmost column in the row-->
+                            <p class="lead" id="sm-right-align">AI Lead 2020-2021, AI Path Planning Sub-team Lead 2019-2020</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- The card body (the skills-card-body class just changes the padding)-->
+                <div class="card-body skills-card-body">
+                    UM::Autonomy is an award-winning undergraduate student project team from the University of Michigan. 
+                    Each year we build an autonomous boat to participate in the RoboNation Roboboat competition.<br>
+                    As AI lead, I coordinate ~25 members across four technical subteams in the areas of deep learning assisted computer-vision, path-planning,
+                    controls and simulation.
+                    <ul>
+                        <li>
+                          Designed an autonomous robotics tutorial sequence targeted at members with limited programming expe-rience to promote diversity and inclusion.
+                        </li>
+                        <li>
+                          Developed an object oriented path planner in C++ and ROS for completely autonomous boat navigation.
+                        </li>
+                        <li>
+                          Simulated a quantitative comparison of path planing algorithms for our boat, concluding with the imple-mentation of Theta* with a spline overlay.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+
+                        <!-- Two columns are used to separate the company name and job title when screen size is small or greater
+                        (text of second column is aligned right), or to stack them on top of each other when smaller -->
+                        <div>
+                            <h4>Seven Mile</h4>
+                        </div>
+                </div>
+                <!-- The card body (the skills-card-body class just changes the padding)-->
+                <div class="card-body skills-card-body">
+                    As a member of Seven Mile, I brought one-on-one, Scratch-based coding lessons to underprivileged students at Detroit Community Middle School.
+                </div>
+            </div>
+
+            <!-- Fourth section header, Projects-->
             <div class="section-header" id="Projects">
                 <h3>Projects</h3>
             </div>
-            <div class="section-text">
+            <div class="sub-section-text">
                 <!-- Unordered list of my projects-->
+                I consider <a href="#Buymyspot" >BUYMYSPOT</a>, where I was the sole developer, and my work for <a href="#UMA" >UM::Autonomy</a> to be my crowning projects.<br>
+                Here are a couple of additional projects:
                 <ul>
                     <li>
                       <a href="https://github.com/willsnedegar/Clout-Count">Clout Count</a>:<br>
@@ -193,9 +352,6 @@
                       <a href="https://github.com/willsnedegar/YouTube-Queue">YouTube Queue</a>: <br>
                       Chrome extension enabling users to add YouTube videos to a queue to play automatically — built with
                       JavaScript and the YouTube Data API
-                    </li>
-                    <li>
-                        <a href="https://github.com/willsnedegar/willsnedegar.github.io">This website </a>
                     </li>
                 </ul>
             </div>
@@ -226,9 +382,9 @@
                             Javascript
                         </div>
                         <div class="col-sm skill">
-                            <img src="images/python.png" alt="Python logo" class="logo">
+                            <img src="images/java-logo.png" alt="Java logo" class="logo">
                             <br>
-                            Python
+                            Java
                         </div>
                         <div class="col-sm skill">
                             <img src="images/html5.png" alt="HTML5 logo" class="logo">
@@ -243,30 +399,84 @@
                     </div>
                 </div>
             </div>
+
             <!-- Again using card class inside of skills section, this time for utilities-->
             <div class="card">
                 <div class="card-header">
-                    <h4>Utilities</h4>
+                    <h4>Libraries</h4>
                 </div>
                 <!-- Same exact set up used above for "languages" section of "skils"-->
                 <div class="card-body skills-card-body">
                     <div class="row">
-                      <div class="col-sm skill">
-                          <img src="images/vue-logo.png" alt="Vue logo" class="logo">
-                          <br>
-                          Vue
-                      </div>
+                        <div class="col-sm skill">
+                            <img src="images/vue-logo.png" alt="Vue logo" class="logo">
+                            <br>
+                            Vue
+                        </div>
 
                         <div class="col-sm skill">
-                            <img src="images/bootstrap-stack.png" alt="boostrap logo" class="logo">
+                            <img src="images/react-logo.jpg" alt="React logo" class="logo">
                             <br>
-                            Bootstrap
+                            React
+                        </div>
+
+                        <div class="col-sm skill">
+                            <img src="images/redux-logo.png" alt="Redux logo" class="logo">
+                            <br>
+                            Redux
                         </div>
 
                         <div class="col-sm skill">
                             <img src="images/mongodb-logo.png" alt="MongoDB logo" class="logo">
                             <br>
                             MongoDB
+                        </div>
+
+                        <div class="col-sm skill">
+                            <img src="images/spring-logo.png" alt="Spring logo" class="logo">
+                            <br>
+                            Spring
+                        </div>
+
+                        <div class="col-sm skill">
+                            <img src="images/aws-logo.png" alt="AWS logo" class="logo">
+                            <br>
+                            AWS
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h4>Tools</h4>
+                </div>
+                <!-- Same exact set up used above for "languages" section of "skils"-->
+                <div class="card-body skills-card-body">
+                    <div class="row">
+                      <div class="col-sm skill">
+                          <img src="images/git-logo.png" alt="Git logo" class="logo">
+                          <br>
+                          Git
+                      </div>
+
+                        <div class="col-sm skill">
+                            <img src="images/linux-logo.png" alt="Linux terminal logo" class="logo">
+                            <br>
+                            Linux Terminal
+                        </div>
+
+                        <div class="col-sm skill">
+                            <img src="images/vs-logo.png" alt="Visual Studio logo" class="logo">
+                            <br>
+                            Visual Studio
+                        </div>
+
+                        <div class="col-sm skill">
+                            <img src="images/eclipse-logo.png" alt="Eclipse logo" class="logo">
+                            <br>
+                            Eclipse
                         </div>
 
                     </div>
@@ -280,20 +490,24 @@
             <div class="row">
                 <!-- Row split between three columns when size medium or larger, two of which are equal size (5/12 of screen),
                 with the last section separating the two with 1/6 of the screen width.-->
-                <div class="col-md-5 section-text">
-                     I'm currently a sophomore in Computer Science (College of Engineering)
+                <div class="col-md-5 sub-section-text">
+                     I'm currently a Junior in Computer Science (College of Engineering)
                      at the University of Michigan, Ann Arbor.
                      <br>
-                     3.79 GPA
+                     3.84 GPA
                      <br>
                      <br>
                      Relevant Coursework:
                      <ul>
                          <li>Data Structures and Algorithms</li>
+                         <li>Web Systems</li>
+                         <li>Computer Vision</li>
+                         <li>Practical Programming in Java</li>
+                         <li>Programming Languages</li>
+                         <li>Foundations of Computer Science</li>
                          <li>Introduction to Computer Organization</li>
                          <li>Programming and Introductory Data Structures</li>
-                         <li>Introduction to Computing Systems</li>
-                         <li>Introduction to Programming</li>
+                         <li>Linear Algebra</li>
                          <li>Discrete Math</li>
                          <li>Multivariable Calculus</li>
                      </ul>
@@ -313,16 +527,16 @@
             </div>
             <!-- Links containing an icon and hyperlinked text -->
             <div class="contact-link">
+                <!-- LinkedIn Link -->
+                <a href="https://linkedin.com/in/william-snedegar">linkedin.com/in/william-snedegar</a>
+            </div>
+            <div class="contact-link">
                 <!-- Email link -->
-                <a href="mailto:someone@yoursite.com"><img src="images/email.png" alt="Email Icon" class="icon">&emsp;williamsnedegar@gmail.com</a>
+                <a href="mailto:someone@yoursite.com">williamsnedegar@gmail.com</a>
             </div>
             <div class="contact-link">
                 <!-- Github Link -->
-                <a href="https://github.com/willsnedegar"><img src="images/github-icon.png" alt="Github Logo" class="icon">&emsp;https://github.com/willsnedegar</a>
-            </div>
-            <div class="contact-link">
-                <!--Phone Link -->
-                <a href="tel:+1-779-771-3299"><img src="images/phone.png" alt="Phone Icon" class="icon">&emsp;(779) 771-3299</a>
+                <a href="https://github.com/willsnedegar">github.com/willsnedegar</a>
             </div>
         </div>
 
